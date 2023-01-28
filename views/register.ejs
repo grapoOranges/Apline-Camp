@@ -1,0 +1,38 @@
+<%- include ('./partials/header'); -%>
+<div class="row">
+    <h1 style="text-align: center">Sign Up</h1>
+    <div style="width: 30%; margin: 25px auto;">
+        <form action="/register" method="post">
+            <div class="form-group">
+                <input class="form-control" type="text" name="firstName" placeholder="first name" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" name="lastName" placeholder="last name" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" name="username" placeholder="username" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="password" name="password" placeholder="password" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" name="avatar" placeholder="avatar url">
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="email" name="email" placeholder="jsmith@example.com" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" name="adminCode" placeholder="Admin code">
+            </div>
+            <div class="form-group green-border-focus">
+                <label for="aboutme">About me</label>
+                <textarea class="form-control" placeholder="Write something here"id="aboutme" rows="3" name="aboutMe"></textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-lg btn-primary btn-block">Sign Up!</button>
+            </div>
+        </form>
+        <a href="/campgrounds">Go Back</a>
+    </div>
+</div>
+<%- include ('./partials/footer'); -%>
